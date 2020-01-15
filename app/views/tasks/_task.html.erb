@@ -1,0 +1,10 @@
+<h2>Task</h2>
+
+  <%= form_for [@category,@task] do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.hidden_field :category_id,value:@category.id %>
+
+    <%= f.submit "add" %>
+  <% end %>

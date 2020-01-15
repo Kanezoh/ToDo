@@ -1,5 +1,8 @@
-<h1>ToDo App</h1>
-
+<h2>Categories</h2>
 <% @categories.each do |category| %>
-  <%= link_to category.name,category_path(category.id) %>
+  <%= link_to category.name,category_path(category) %>
 <% end %>
+
+<p>...or create new Category?
+<%= link_to 'Yes',new_category_path %>
+</p<

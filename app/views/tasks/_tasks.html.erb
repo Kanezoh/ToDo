@@ -1,0 +1,7 @@
+<h2>All Tasks</h2>
+<% @tasks.each do |task| %>
+  <p>
+<%= task.name %>
+<%= link_to '編集',edit_category_task_path(@category,task) %>
+<%= link_to '削除',category_task_path(@category,task),method: :delete,data:{confirm:"Really?"} %>
+<% end %>
