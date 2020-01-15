@@ -1,0 +1,6 @@
+<h1><%= @category.name %>: All Tasks</h1>
+
+<p>...or,delete this category?
+<%= link_to 'Yes',@category,method: :delete,data:{confirm:"Really?"} %>
+</p>
+
